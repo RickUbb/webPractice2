@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    /* Estilo para las columnas definidas en el primer colgroup */
+    #colDestacada {
+        background-color: #f0f8ff; /* Un tono claro de azul para la primera columna */
+        width: 150px;              /* Ancho fijo para la primera columna */
+    }
+
+    /* Esta clase se aplica a la columna del segundo colgroup */
+    .colResaltada {
+        background-color: #ffe4e1; /* Un tono claro de rosado para la tercera columna */
+    }
+
+    /* Esta clase se aplica a las dos columnas definidas por span="2" */
+    .colOculta {
+        display: none; /* No se mostrará la columna definida con esta clase */
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+    th, td {
+        border: 1px solid #ccc;
+        padding: 8px;
+        text-align: left;
+    }
+</style>
+</head>
+<body>
+
+<table>
+    <!-- Primer grupo de columnas: la primera con un ID y la segunda sin atributos -->
+    <colgroup>
+        <col id="colDestacada" />
+        <col />
+    </colgroup>
+    <!-- Segundo grupo de columnas: la primera con una clase, la segunda con una clase y span -->
+    <colgroup>
+        <col class="colResaltada" />
+        <col class="colOculta" span="2" />
+    </colgroup>
+
+    <thead>
+        <tr>
+            <th>Producto</th>
+            <th>Precio</th>
+            <th>Stock</th>
+            <th>Proveedor</th>
+            <th>Categoría</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Manzanas</td>
+            <td>$2.00</td>
+            <td>50</td>
+            <td>Proveedor A</td>
+            <td>Frutas</td>
+        </tr>
+        <tr>
+            <td>Peras</td>
+            <td>$2.50</td>
+            <td>30</td>
+            <td>Proveedor B</td>
+            <td>Frutas</td>
+        </tr>
+        <tr>
+            <td>Leche</td>
+            <td>$1.20</td>
+            <td>80</td>
+            <td>Proveedor C</td>
+            <td>Lácteos</td>
+        </tr>
+    </tbody>
+</table>
+
+
+<table>
+    
+    <caption>Table Title</caption> <!--| caption is the first child of table |-->
+     <thead> <!--======================| thead is after caption |-->
+       <tr>
+         <th>Header content 1</th>
+         <th>Header content 2</th>
+       </tr>
+     </thead>
+     <tbody> <!--======================| tbody is after thead |-->
+       <tr>
+         <td>Body content 1</td>
+         <td>Body content 2</td>
+       </tr>
+     </tbody>
+    
+     <tfoot><!--| tfoot can be placed before or after tbody, but not in a group of tbody. |-->        
+   <!--| Regardless where tfoot is in markup, it is rendered at the bottom. |-->                      
+                                                                                                      
+                                                                                                      
+                                                                  
+       <tr>
+         <td>Footer content 1</td>
+         <td>Footer content 2</td>
+       </tr>
+     </tfoot>
+    </table>
+
+
+</body>
+</html>
