@@ -1,36 +1,47 @@
+/* Estilos globales para el cuerpo del documento */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-  }
-  
-  nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 15px;
-  }
-  
-  nav a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  main {
-    padding: 20px;
-  }
-  
-  footer {
+    font-family: Arial, sans-serif; /* Fuente principal del documento */
+    margin: 0; /* Elimina el margen predeterminado */
+    padding: 0; /* Elimina el relleno predeterminado */
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #333; /* Color de fondo oscuro */
+    color: #fff; /* Color del texto blanco */
+    padding: 20px; /* Relleno interno de 20px */
+}
+
+/* Estilos para la lista de navegación dentro del encabezado */
+nav ul {
+    list-style: none; /* Elimina los puntos de la lista */
+    margin: 0; /* Elimina el margen predeterminado */
+    padding: 0; /* Elimina el relleno predeterminado */
+    display: flex; /* Muestra los elementos de la lista en una fila */
+    gap: 15px; /* Espacio entre los elementos de la lista */
+}
+
+/* Estilos para los enlaces de navegación */
+nav a {
+    color: #fff; /* Color del texto blanco */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+}
+
+/* Estilos para el contenido principal */
+main {
+    padding: 20px; /* Relleno interno de 20px */
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #f2f2f2; /* Color de fondo gris claro */
+    text-align: center; /* Centra el texto */
+    padding: 10px; /* Relleno interno de 10px */
+    margin-top: 20px; /* Margen superior de 20px */
+}
+
+.test {
     background-color: #f2f2f2;
-    text-align: center;
-    padding: 10px;
+    padding: 20px;
     margin-top: 20px;
-  }
-  
+}
